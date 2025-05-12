@@ -28,14 +28,8 @@ export default function Login() {
       return;
     }
 
-    navigate('/home', {
-      state: {
-        user: {
-          email: formData.email,
-          name: 'John Doe',
-        },
-      },
-    });
+    navigate('/home')
+    
   };
 
   return (

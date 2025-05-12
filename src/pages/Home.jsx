@@ -1,9 +1,5 @@
-import { useLocation } from "react-router-dom";
 
 export default function Home() {
-
-  const location = useLocation();
-  const { email, name } = location.state?.user || {};
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center shadow-lg rounded-xl">
@@ -19,8 +15,8 @@ export default function Home() {
               <img id="camera" src={require('../assets/camera.png').default} alt="camera" className=" absolute w-6 h-6 bottom-0 right-0" />
             </div>
             <div className="w-full  flex-col">
-              <h5 className="font-bold">{name || "Marry Doe"}</h5>
-              <p className="text-[16px] text-gray-700">{email}</p>
+              <h5 className="font-bold">Marry Doe</h5>
+              <p className="text-[16px] text-gray-700">marrydoe@gmail.com</p>
             </div>
           </div>
 
