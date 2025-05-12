@@ -16,7 +16,7 @@ export default function Home() {
               id="profile" 
               src={profileImage} 
               alt="Profile" 
-              className="w-18 h-18 rounded-full object-cover" 
+              className="w-18 h-18 rounded-full" 
             />
             <img 
               id="camera" 
