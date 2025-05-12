@@ -15,8 +15,8 @@ export default function Home() {
       <div className="w-full bg-gray-200 min-h-[600px] flex flex-col justify-top p-4">
           <div className="w-full flex gap-5">
             <div className=" relative">
-              <img id="profile" src="/src/assets/profile.png" alt="Profile" className="w-18 rounded-full" />
-              <img id="camera" src="/src/assets/camera.png" alt="camera" className=" absolute w-6 h-6 bottom-0 right-0" />
+              <img id="profile" src={require('../assets/profile.png').default} alt="Profile" className="w-18 rounded-full" />
+              <img id="camera" src={require('../assets/camera.png').default} alt="camera" className=" absolute w-6 h-6 bottom-0 right-0" />
             </div>
             <div className="w-full  flex-col">
               <h5 className="font-bold">{name || "Marry Doe"}</h5>
